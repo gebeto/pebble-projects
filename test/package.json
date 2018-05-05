@@ -1,0 +1,34 @@
+{
+  "name": "test",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "build": "pebble build",
+    "p_install": "pebble install --phone 192.168.0.105",
+    "start": "yarn build && yarn p_install"
+  },
+  "pebble": {
+    "displayName": "test",
+    "uuid": "5bd27467-2d65-4369-bb55-db3af4425103",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}
